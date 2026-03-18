@@ -15,29 +15,30 @@ Customer churn is one of the most critical business problems in the telecom indu
 
 ## Project Structure
 
-customer-churn-prediction/  
-│  
-├── data/  
-│ └── telco_churn.csv # Raw dataset  
-│  
-├── notebooks/  
-│ ├── 01_EDA.ipynb # Exploratory Data Analysis  
-│ ├── 02_feature_engineering.ipynb # Feature creation & preprocessing  
-│ ├── 03_modeling.ipynb # Model training & benchmarking  
-│ └── 04_shap_analysis.ipynb # Feature importance & explainability  
-│  
-├── src/  
-│ ├── preprocess.py # Data preprocessing functions  
-│ ├── train.py # Model training pipeline  
-│ └── predict.py # Prediction utilities  
-│  
-├── models/  
-│ └── xgboost_best_model.pkl # Saved best model  
-│  
-├── app.py # Streamlit dashboard  
-├── requirements.txt  
-└── README.md  
-
+```
+customer-churn-prediction/
+│
+├── data/
+│   └── telco_churn.csv              # Raw dataset
+│
+├── notebooks/
+│   ├── 01_EDA.ipynb                 # Exploratory Data Analysis
+│   ├── 02_feature_engineering.ipynb # Feature creation & preprocessing
+│   ├── 03_modeling.ipynb            # Model training & benchmarking
+│   └── 04_shap_analysis.ipynb       # Feature importance & explainability
+│
+├── src/
+│   ├── preprocess.py                # Data preprocessing functions
+│   ├── train.py                     # Model training pipeline
+│   └── predict.py                   # Prediction utilities
+│
+├── models/
+│   └── xgboost_best_model.pkl       # Saved best model (generated after training)
+│
+├── app.py                           # Streamlit dashboard
+├── requirements.txt                 # All dependencies
+└── README.md
+```
 
 ---
 
@@ -47,6 +48,56 @@ customer-churn-prediction/
 - **Records:** 7,043 customers
 - **Features:** 21 (demographics, services subscribed, contract type, charges)
 - **Target:** `Churn` (Yes/No)
+
+---
+
+## Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Jagmohan-Prajapati/customer-churn-prediction.git
+cd customer-churn-prediction
+```
+
+### 2. Create & Activate Virtual Environment
+```bash
+# Create venv
+python -m venv venv
+
+# Activate — Windows
+venv\Scripts\activate
+
+# Activate — Mac/Linux
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Register Jupyter Kernel
+```bash
+python -m ipykernel install --user --name=churn-env --display-name "Python (churn-env)"
+```
+
+### 5. Launch Jupyter & Run Notebooks in Order
+```bash
+jupyter notebook
+```
+> Select kernel **"Python (churn-env)"** inside each notebook before running.
+
+| Order | Notebook | Purpose |
+|---|---|---|
+| 1 | `01_EDA.ipynb` | Exploratory Data Analysis |
+| 2 | `02_feature_engineering.ipynb` | Feature engineering & preprocessing |
+| 3 | `03_modeling.ipynb` | Model training & benchmarking |
+| 4 | `04_shap_analysis.ipynb` | SHAP explainability |
+
+### 6. Run Streamlit Dashboard
+```bash
+streamlit run app.py
+```
 
 ---
 
@@ -78,27 +129,21 @@ customer-churn-prediction/
 ## Key Business Insights
 
 - **Contract type** is the strongest churn predictor — month-to-month customers churn 3x more
-- Customers with **tenure < 12 months** are highest risk
-- Lack of **Tech Support** and **Online Security** services strongly correlates with churn
+- Customers with **tenure < 12 months** are at highest risk
+- Lack of **Tech Support** and **Online Security** strongly correlates with churn
 
 ---
 
-## Run Locally
-
-git clone https://github.com/Jagmohan-Prajapati/customer-churn-prediction.git  
-cd customer-churn-prediction  
-pip install -r requirements.txt  
-streamlit run app.py  
-
 ## Tech Stack
 
-- Python, Pandas, NumPy
-- Scikit-Learn, XGBoost, SHAP
-- Matplotlib, Seaborn
-- Streamlit
-- SQL (PostgreSQL / SQLite for data querying)  
+- **Python**, Pandas, NumPy
+- **Scikit-Learn**, XGBoost, SHAP
+- **Matplotlib**, Seaborn
+- **Streamlit**
+- **SQL** (SQLAlchemy)
+
+---
 
 ## Author
-Jagmohan Prajapat  
-LinkedIn:[https://www.linkedin.com/in/jagmohan-prajapati-aaa117200/]  
-GitHub:[https://github.com/Jagmohan-Prajapati]  
+
+**Jagmohan Prajapat** — [LinkedIn](https://www.linkedin.com/in/jagmohan-prajapati-aaa117200/) | [GitHub](https://github.com/Jagmohan-Prajapati)
