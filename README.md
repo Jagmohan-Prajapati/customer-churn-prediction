@@ -100,5 +100,5 @@ streamlit run app.py
 
 ## Author
 Jagmohan Prajapat  
-LinkedIn  
-GitHub  
+LinkedIn:[https://www.linkedin.com/in/jagmohan-prajapati-aaa117200/]  
+GitHub:[https://github.com/Jagmohan-Prajapati]  
