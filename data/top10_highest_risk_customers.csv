@@ -1,0 +1,11 @@
+Customer_ID,Monthly_Charge,Tenure_Months,Contract,Churn_Prob,Actual_Churn
+2208,100.8,1,Month-to-month,91.3%,Churned
+6482,101.45,1,Month-to-month,91.0%,Churned
+1976,93.55,1,Month-to-month,90.3%,Churned
+3380,95.1,1,Month-to-month,90.3%,Churned
+4800,94.0,1,Month-to-month,90.3%,Churned
+2577,94.6,1,Month-to-month,89.8%,Churned
+3209,93.85,1,Month-to-month,89.8%,Churned
+6866,95.45,1,Month-to-month,89.8%,Churned
+1704,99.75,1,Month-to-month,89.7%,Churned
+585,85.7,1,Month-to-month,89.2%,Churned
